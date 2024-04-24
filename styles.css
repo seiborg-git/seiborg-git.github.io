@@ -1,13 +1,81 @@
-body {
-    margin: 50;
-    background: rgb(28, 28, 28);
-    background-image: linear-gradient(rgb(28, 28, 28), rgb(40, 40, 40), rgb(28, 28, 28));
+
+:root {
+    --color: white;
+    --colorBG: black;
+  }
+
+  body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+  }
+
+  .parallax-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+
+    background-color: var(--colorBG);
+    background-image:image-set("images/LSCoverWebsite.png");
+    background-position: center;
+    background-size: cover;
+    color: var(--color);
+    row-gap: 1rem;
     text-align: center;
-    color: whitesmoke;
+  }
+
+  .buffer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+
+    background-color: var(--color);
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    color: var(--colorbg);
+    row-gap: 1rem;
+    text-align: center;
+  }
+
+  .grid-item {
+    display: inline-grid;
+  }
+
+  .parallax-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 6rem 0;
+    background-image: url();
+    gap: 1.6em;
+  }
+  .buffer2 {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*thisiswherethemagichappens:;*/
+    background-attachment: fixed;
+    background-color: var(--color);
+    background-image: image-set();
+    background-position: center;
+    background-size: cover;
+    color: var(--colorbg);
+    row-gap: 1rem;
+    text-align: center;
 }
 
-audio {
-    width: 50%;
-    min-width: 100px;
-    max-width: 300px;
+.QRCode {
+    max-width: 100%;
 }
