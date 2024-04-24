@@ -19,7 +19,7 @@
     background-attachment: fixed;
 
     background-color: var(--color);
-    background-image:image-set("images/LSCoverWebsite.png");
+    background-image:image-set();
     background-position: center;
     background-size: cover;
     color: var(--colorBG);
