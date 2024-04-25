@@ -2,30 +2,32 @@
 :root {
     --color: white;
     --colorBG: black;
-  }
+}
 
-  body {
-    margin: 0;
-    font-family: Poppins, sans-serif;
-  }
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
 
-  .parallax-container {
-    display: flex;
-    min-height: 100dvh;
+h1 {
+  scale: 2;
+}
 
+.parallax-container {
+  display: flex;
+  min-height: 100dvh;
 
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
 
-    /*  this is where the magic happens:  */
-    background-attachment: fixed;
-
-    background-color: var(--color);
-    background-image:image-set("images/LSCoverWebsite.png");
-    background-position: center;
-    background-size: cover;
-    color: var(--colorBG);
-    row-gap: 1rem;
-    text-align: center;
-  }
+  background-color: var(--color);
+  background-image:image-set("images/LSCoverWebsite.png");
+  background-position: center;
+  background-size: cover;
+  color: var(--colorBG);
+  row-gap: 1rem;
+  text-align: center;
+}
 
   .buffer {
     display: flex;
@@ -89,4 +91,8 @@
 
 .QRCode {
     max-width: 40%;
+}
+
+.HeaderIMG {
+  max-width: 100%;
 }
