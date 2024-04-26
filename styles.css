@@ -13,6 +13,27 @@ h1 {
   scale: 2;
 }
 
+.grid-container-1 h2 {
+  color: black;
+}
+
+.grid-container-2 h2 {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 .parallax-container {
   display: flex;
   min-height: 100dvh;
